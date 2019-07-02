@@ -1,7 +1,6 @@
 .container,
 .container-fluid{
     .row{
-        border: 2px solid lighten($black, 50%);
         display: grid;
         padding: 5px;
         //define el número de grillas repeat(numero de columnas, ancho 1fr = 1fracción)  

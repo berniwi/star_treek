@@ -1,0 +1,9 @@
+.cosa{
+    display: none;
+}
+
+@media screen and (min-width: $viewport-small) {
+    .cosa{
+        display: initial;
+    }
+}

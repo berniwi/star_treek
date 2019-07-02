@@ -12,63 +12,110 @@
 
 <body>
 
-    <header>
-        <img src="assets/img/Logo.svg" alt="logo">
-        <ul>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Características</a></li>
-            <li><a href="#">Precios</a></li>
-            <button><a href="#">Iniciar sesión</a></button>
-            <button><a href="#">Registrate</a></button>
-        </ul>
-        <button><img src="" alt="anvorguesa"></button>
+    <header class="cabecera container">
+        <div class="row">
+            <div class="col-1">
+                <img src="assets/img/Logo.svg" alt="logo">
+            </div>
+
+            <div class="cosa">
+                <ul>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Características</a></li>
+                    <li><a href="#">Precios</a></li>
+                    <button><a href="#">Iniciar sesión</a></button>
+                    <button><a href="#">Registrate</a></button>
+                </ul>
+            </div>
+
+            <div class="col-11">
+                <button><img src="" alt="anvorguesa"></button>
+            </div>
+        </div>
     </header>
 
-    <section>
-        <h1>Haz trekking sin Parar</h1>
-        <p>Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la 
-            ruta a tomar con tus compañeros de expedición.</p>
-        <img src="assets/img/bg-hero.svg" alt="bg-hero">
+    <section class="container-fluid presentacion">
+        <div class="row">
+            <div class="col-12">
+                <h1>Haz Trekking sin Parar</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la 
+                ruta a tomar con tus compañeros de expedición.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <img class="presentacion__img" src="assets/img/bg-hero.svg" alt="bg-hero">
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Características</h2>
-        <img src="assets/img/bar-graph.svg" alt="bg-graph">
-        <h3>Estadísticas de tu progreso</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eum animi quae asperiores unde sapiente 
-            doloribus magni, natus explicabo repudiandae, dolorum assumenda, aliquid a mollitia dolore ad harum! Nostrum, 
-            vel.</p>
+    <section class="container-fluid caracteristicas">
+        <div class="row">
+            <div class="col-12">
+                <h2>Características</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <img src="assets/img/bar-graph.svg" alt="bg-graph">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3>Estadísticas de tu progreso</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eum animi quae asperiores unde sapiente 
+                doloribus magni, natus explicabo repudiandae, dolorum assumenda, aliquid a mollitia dolore ad harum! Nostrum, 
+                vel.</p>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <img src="assets/img/bg-price.svg" alt="bg-price">
-        <h2>Precios</h2>
+    <section class="container-fluid precios">
+        <div class="row">
+            <div class="col-12">
+                <img src="assets/img/bg-price.svg" alt="bg-price">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2>Precios</h2>
+            </div>
+        </div>
+
 
         <article>
-            <h3>Trekk-in Free</h3>
-            <p>$0 / mes</p>
-            <p>Ver mapa creado por usuario</p>
-            <p>Concretar con otros usuarios</p>
+            <h4>Trekk-in Free</h4>
+            <h5>$0 / mes</h5>
+            <p class="ty_card">Ver mapa creado por usuario</p>
+            <p class="ty_card">Concretar con otros usuarios</p>
             <button><a href="#">Obtén free</a></button>
         </article>
 
         <article>
-            <h3>Trekk-in Premium</h3>
-            <p>$3500 / mes</p>
-            <p>Ver mapa creado por usuarios</p>
-            <p>Concretar con otros usuarios</p>
-            <p>Definir mejores rutas</p>
-            <p>Mapas offline</p>
-            <p>Integración con otras aplicaciones</p>
+            <h4>Trekk-in Premium</h4>
+            <h5>$3500 / mes</h5>
+            <p class="ty_card">Ver mapa creado por usuarios</p>
+            <p class="ty_card">Concretar con otros usuarios</p>
+            <p class="ty_card">Definir mejores rutas</p>
+            <p class="ty_card">Mapas offline</p>
+            <p class="ty_card">Integración con otras aplicaciones</p>
             <button><a href="#">Obtén Premium</a></button>
         </article>
     </section>
 
     <footer>
         <ul>
-            <li>Legal</li>
-            <li>Cookies</li>
-            <li>Sobre anuncios</li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Sobre anuncios</a></li>
         </ul>
 
         <small>© 2018 Trekk-in SPA</small>

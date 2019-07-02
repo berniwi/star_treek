@@ -1,14 +1,9 @@
 @mixin set-column {
-    background-color: lighten($black, 70%);
     padding: 5px; 
-
-    @media screen and (min-width: 700px) and (max-width: 800px){
-         background-color: blue;
-    }
-
 }
 
 @mixin  set-col {
+
     @for $i from 1 through 12 {
         .col-#{$i} { 
           @include set-column(); 
@@ -18,6 +13,7 @@
 }
 
 @mixin  set-col-sm {
+
     @for $i from 1 through 12 {
         .col-sm-#{$i} { 
           @include set-column(); 
@@ -27,6 +23,7 @@
 }
 
 @mixin  set-col-md {
+
     @for $i from 1 through 12 {
         .col-md-#{$i} { 
           @include set-column(); 
@@ -36,6 +33,7 @@
 }
 
 @mixin  set-col-lg {
+
     @for $i from 1 through 12 {
         .col-lg-#{$i} { 
           @include set-column(); 
@@ -43,8 +41,21 @@
         }
     }   
 }
-.container{
+
+@mixin  set-col-xl {
+    
+    @for $i from 1 through 12 {
+        .col-xl-#{$i} { 
+          @include set-column(); 
+          grid-column: span #{$i}; 
+        }
+    }   
+}
+
+.container,
+.container-fluid{
     .row{
+
         @include set-col();
 
         @media screen and (min-width: $viewport-small) {
@@ -58,5 +69,10 @@
         @media screen and (min-width: $viewport-large) {
             @include set-col-lg();
         }
+
+        @media screen and (min-width: $viewport-xlarge) {
+            @include set-col-lg();
+        }
+       
     }
 }
