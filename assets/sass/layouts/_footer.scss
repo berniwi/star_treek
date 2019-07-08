@@ -1,0 +1,36 @@
+.footer{
+    background-color: $raisin-black;
+    text-align: center;
+    padding: 7vh 8vw;
+    
+    ul{
+        li{
+            display: inline-block;
+            padding-bottom: 4vh;
+            padding-right: 4vw;
+            a{
+
+                color: $white;
+            }
+
+        }
+    }
+
+    small{
+        color: $white;
+    }
+}
+
+@media screen and (min-width: $viewport-small) {
+    .footer{
+        text-align: left;
+
+        ul{
+            display: inline-block;
+        }
+
+        small{
+            float: right;
+        }
+    }
+}

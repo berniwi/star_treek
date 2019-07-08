@@ -1,9 +1,48 @@
-.cosa{
-    display: none;
+.cabecera{
+    padding: 4vh 8vw 7vh 8vw;
+
+    &__logo{
+        display: inline-block;
+        width: 40vw;
+        margin: 0;
+    }
+
+    &__ul{
+        display: none;
+    }
+
+    &__button{
+        display: inline-block;
+        width: 40vw;
+        text-align: right;
+    }
+
 }
 
 @media screen and (min-width: $viewport-small) {
-    .cosa{
-        display: initial;
+    
+    .cabecera{
+        display: flex;
+
+        &__logo{
+            display: inline-block;
+            width: 4vw;
+            margin: 0;
+        }
+    
+
+        &__ul{
+                display: initial;
+                width: 95vw;
+                padding-top: 2vh; 
+                li{
+                    display: inline-block;
+                    padding-left: 3vw; 
+                }
+            }
+
+        &__button{
+            display: none;
+        }
     }
 }

@@ -1,0 +1,25 @@
+svg{
+    width: 100vw;
+    height: 500px;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 100;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+.caracteristicas__content__svg{
+    animation: aparecer 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@media screen and (min-width: $viewport-small) {
+    .caracteristicas__content__svg{
+        padding-left: 23vw;
+    }
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/35314414a9.js"></script>
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Treek-in</title>
 
@@ -12,43 +13,38 @@
 
 <body>
 
-    <header class="cabecera container">
-        <div class="row">
-            <div class="col-1">
-                <img src="assets/img/Logo.svg" alt="logo">
-            </div>
+    <header class="cabecera">
+        <div class="cabecera__logo">
+            <img src="assets/img/Logo.svg" alt="logo">
+        </div>
 
-            <div class="cosa">
-                <ul>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Características</a></li>
-                    <li><a href="#">Precios</a></li>
-                    <button><a href="#">Iniciar sesión</a></button>
-                    <button><a href="#">Registrate</a></button>
-                </ul>
-            </div>
+        <div class="cabecera__ul">
+            <ul>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Características</a></li>
+                <li><a href="#">Precios</a></li>
+                <button class="cabecera__ul__button cabecera__ul__button-primero"><a href="#">Iniciar sesión</a></button>
+                <button class="cabecera__ul__button"><a href="#">Registrate</a></button>
+            </ul>        
 
-            <div class="col-11">
-                <button><img src="" alt="anvorguesa"></button>
-            </div>
+        </div>
+
+        <div class="cabecera__button">
+            <button><i class="fas fa-bars fa-3x"></i></button>
         </div>
     </header>
+
 
     <section class="container-fluid presentacion">
         <div class="row">
             <div class="col-12">
-                <h1>Haz Trekking sin Parar</h1>
+                <h1 class="presentacion__text">Haz Treking sin Parar</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <p>Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la 
+                <p class="presentacion__text presentacion__text-lh">Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la 
                 ruta a tomar con tus compañeros de expedición.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <img class="presentacion__img" src="assets/img/bg-hero.svg" alt="bg-hero">
             </div>
         </div>
     </section>
@@ -56,24 +52,24 @@
     <section class="container-fluid caracteristicas">
         <div class="row">
             <div class="col-12">
-                <h2>Características</h2>
+                <h2 class="caracteristicas__text">Características</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <img src="assets/img/bar-graph.svg" alt="bg-graph">
+        <div class="row caracteristicas__content">
+            <div class="col-12 col-sm-6 caracteristicas__content__svg">
+                <svg width="318" height="165" xmlns="http://www.w3.org/2000/svg">
+                    <g class="bar-graph" fill-rule="evenodd">
+                        <path class="a-bar" fill="#EE9480" d="M10.949 53h34.778v108H10.949zM63.613 0h34.778v161H63.613zM116.276 32h34.778v129h-34.778z"/>
+                        <path class="b-bar" fill="#2AB7CA" d="M168.94 53h34.778v108H168.94zM221.603 28h34.778v133h-34.778zM274.267 73h34.778v88h-34.778z"/>
+                        <path class="plane" d="M3 162.5h312.503" stroke="#979797" stroke-width="5" stroke-linecap="square"/>
+                    </g>
+                </svg>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h3>Estadísticas de tu progreso</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eum animi quae asperiores unde sapiente 
-                doloribus magni, natus explicabo repudiandae, dolorum assumenda, aliquid a mollitia dolore ad harum! Nostrum, 
-                vel.</p>
+            <div class="col-12 col-sm-6 caracteristicas__content__text">
+                <h3 class="caracteristicas__text">Estadísticas de tu progreso</h3>
+                <p class="caracteristicas__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eum animi quae asperiores unde sapiente 
+                        doloribus magni, natus explicabo repudiandae, dolorum assumenda, aliquid a mollitia dolore ad harum! Nostrum, 
+                        vel.</p>
             </div>
         </div>
     </section>
@@ -81,37 +77,44 @@
     <section class="container-fluid precios">
         <div class="row">
             <div class="col-12">
-                <img src="assets/img/bg-price.svg" alt="bg-price">
+                <h2 class="precios__h2">Precios</h2>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-12">
-                <h2>Precios</h2>
+            <div class="col-12 col-sm-6">
+                    <article class="precios__article">
+                            <h4>Trekk-in Free</h4>
+                            <h5>$0 / mes</h5>
+                            <div class="precios__article__text  precios__article__text-padding">
+                                <p class="ty_card">- Ver mapa creado por usuario</p>
+                                <p class="ty_card">- Concretar con otros usuarios</p>
+                            </div>
+                            <div class="precios__buttons">
+                                <button class="precios__buttons__boton"><a href="#">Obtén free</a></button>
+                            </div>
+                    </article>
+            </div>
+            <div class="col-12 col-sm-6">
+                    <article class="precios__article">
+                            <h4>Trekk-in Premium</h4>
+                            <h5>$3500/mes</h5>
+                            <div class="precios__article__text">
+                                <p class="ty_card">- Ver mapa creado por usuarios</p>
+                                <p class="ty_card">- Concretar con otros usuarios</p>
+                                <p class="ty_card">- Definir mejores rutas</p>
+                                <p class="ty_card">- Mapas offline</p>
+                                <p class="ty_card">- Integración con otras aplicaciones</p>
+                            </div>
+                            <div class="precios__buttons">
+                                <button class="precios__buttons__boton"><a href="#">Obtén Premium</a></button>
+                            </div>
+                        </article>
             </div>
         </div>
-
-
-        <article>
-            <h4>Trekk-in Free</h4>
-            <h5>$0 / mes</h5>
-            <p class="ty_card">Ver mapa creado por usuario</p>
-            <p class="ty_card">Concretar con otros usuarios</p>
-            <button><a href="#">Obtén free</a></button>
-        </article>
-
-        <article>
-            <h4>Trekk-in Premium</h4>
-            <h5>$3500 / mes</h5>
-            <p class="ty_card">Ver mapa creado por usuarios</p>
-            <p class="ty_card">Concretar con otros usuarios</p>
-            <p class="ty_card">Definir mejores rutas</p>
-            <p class="ty_card">Mapas offline</p>
-            <p class="ty_card">Integración con otras aplicaciones</p>
-            <button><a href="#">Obtén Premium</a></button>
-        </article>
     </section>
 
-    <footer>
+    <footer class="footer">
         <ul>
             <li><a href="#">Legal</a></li>
             <li><a href="#">Cookies</a></li>

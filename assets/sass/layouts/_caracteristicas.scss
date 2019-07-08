@@ -1,0 +1,27 @@
+.caracteristicas{
+
+    &__text{
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: $viewport-small) {
+    .caracteristicas{
+
+        h2{
+            text-align: center;
+        }
+        &__content{
+            padding-top: 5vh; 
+            
+            &__text{
+                width: 35vw;
+                padding-top: 5vh;
+                p{
+                    width: 27vw;
+                }
+            }
+
+        }
+    }
+}

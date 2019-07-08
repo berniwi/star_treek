@@ -1,0 +1,47 @@
+.precios{
+    background-image: url("../img/bg-price.svg");
+    background-size: cover;
+    padding-bottom: 7vh;
+
+    &__h2{
+        padding: 30vh 8vw 2vh 8vw;
+        color: $white;
+        text-align: center;
+    }
+    &__article{
+        background-color: $white;
+        border: solid 2px $nickel;
+        width: 80vw;
+        margin: 8vh auto;
+        padding: 10vh 8vw;
+
+        &__text{
+            border-top: solid 1px $onyx;
+            border-bottom: solid 1px $onyx;
+            padding: 6vh 0;
+
+            p{
+                padding-bottom: 3vh;
+            }
+
+            &-padding{
+                padding-bottom: 15vh;
+            }
+        }
+
+        h5{
+            padding-bottom: 4vh;
+        }
+    }
+}
+
+@media screen and (min-width: $viewport-small) {
+    .precios{
+        &__article{
+            width: 30vw; 
+            height: 80vh;
+            padding: 5vh 4vw;
+
+        }
+    }
+}

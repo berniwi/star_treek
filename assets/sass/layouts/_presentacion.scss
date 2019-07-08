@@ -1,8 +1,25 @@
-.presentacion{
-    
-    &__img{
-        width: 100%;
-        height: auto;
-    }
+.presentacion{  
+    background-image: url("../img/bg-hero.svg");
+    background-size: cover;
+    height: 100vh;
 
+    &__text{
+        padding: 0 8vw 0 8vw;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: $viewport-small) {
+    .presentacion{  
+
+        &__text{
+            width: 40%;
+            padding: 0 8vw 0 8vw;
+            text-align: justify;
+
+            &-lh{
+                line-height: 2;
+            }
+        }
+    } 
 }

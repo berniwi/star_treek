@@ -1,0 +1,40 @@
+.precios__buttons{
+    text-align: center;
+    &__boton{
+        background-color: $ball-blue;
+        margin-top: 5vh;
+        text-align: center;
+        padding: 3vh 0;
+        width: 95%;
+        a{
+            color: $white;
+            font-weight: $letra_bold;
+        }
+    }
+}
+
+
+
+.cabecera__ul__button{
+    font-family: $raleway;
+    margin-right: 2vw;
+    background-color: $ball-blue;
+    padding: 1vh 1vw;
+
+    a{
+        color: $white;
+        font-weight: $letra_bold;
+    }
+    
+
+    &-primero{
+        margin-left: 35vw;
+        background-color: $white;
+        border: none; 
+        padding: 0;
+        a{
+            color: $raisin-black;
+            font-weight: $letra_regular;
+        }
+    }
+}
