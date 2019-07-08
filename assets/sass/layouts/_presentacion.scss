@@ -1,16 +1,21 @@
 .presentacion{  
     background-image: url("../img/bg-hero.svg");
     background-size: cover;
-    height: 100vh;
+    height: 140vh;
+    background-position-x: 80%;
+
 
     &__text{
-        padding: 0 8vw 0 8vw;
+        padding: 0 10vw 0 10vw;
         text-align: justify;
     }
 }
 
 @media screen and (min-width: $viewport-small) {
     .presentacion{  
+
+    height: 110vh;    
+    background-position-x: center;
 
         &__text{
             width: 40%;

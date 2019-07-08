@@ -406,14 +406,19 @@ a, small {
 .presentacion {
   background-image: url("../img/bg-hero.svg");
   background-size: cover;
-  height: 100vh;
+  height: 140vh;
+  background-position-x: 80%;
 }
 .presentacion__text {
-  padding: 0 8vw 0 8vw;
+  padding: 0 10vw 0 10vw;
   text-align: justify;
 }
 
 @media screen and (min-width: 576px) {
+  .presentacion {
+    height: 110vh;
+    background-position-x: center;
+  }
   .presentacion__text {
     width: 40%;
     padding: 0 8vw 0 8vw;
