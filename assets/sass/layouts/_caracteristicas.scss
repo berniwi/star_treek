@@ -1,22 +1,37 @@
 .caracteristicas{
+    padding-bottom: 10vh;
 
-    &__text{
-        text-align: justify;
+    h2{
+        text-align: center;
+        padding-bottom: 5vh;
+    }
+
+    &__content{
+        padding-top: 5vh; 
+    
+
+        &__text{
+
+            padding-left: 12vw;
+            padding-right: 10vw;
+
+            h3{
+                padding-bottom: 2vh;
+            }
+        }
+
     }
 }
 
 @media screen and (min-width: $viewport-small) {
     .caracteristicas{
 
-        h2{
-            text-align: center;
-        }
         &__content{
             padding-top: 5vh; 
             
             &__text{
-                width: 35vw;
-                padding-top: 5vh;
+
+                padding: 0;
                 p{
                     width: 27vw;
                 }

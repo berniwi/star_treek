@@ -1,6 +1,5 @@
 svg{
-    width: 100vw;
-    height: 500px;
+    transform: scale(0.8)
 }
 
 @keyframes aparecer{
@@ -22,4 +21,11 @@ svg{
     .caracteristicas__content__svg{
         padding-left: 23vw;
     }
+}
+
+@media screen and (min-width: $viewport-small) {
+    svg{
+        transform: scale(1);
+    }
+
 }
